@@ -6,10 +6,12 @@ MODELREADY is a Streamlit-based web application that helps aspiring fashion mode
 
 Purpose
 As a fashion model, I wanted to create a tool that helps aspiring and developing models understand agency portfolio expectations and identify areas for improvement before submitting to professional agencies.
+
 Requirements
 - Python 3.10 or later (recommended)
 - Streamlit
 - An internet connection to load the Google Fonts and remote hero/agency photography; the One to Watch JPG is stored locally
+
 Quick start
 1. Extract the project ZIP or copy all included files into one directory, preserving the folder structure shown above.
 2. Open a terminal in the project directory.
@@ -32,6 +34,8 @@ How to use it
 4. Select REVEAL MY PORTFOLIO ASSESSMENT.
 5. Read the readiness score, grade, strengths, gaps, recommendations, next steps, and submission checklist.
 6. Explore One to Watch, the global agency watchlist, and industry notes.
+
+
 Changing a selection clears a previous evaluation until you evaluate again.
 How the readiness score works
 The nine assets have these weights:
@@ -108,6 +112,7 @@ Agency-specific submission requirements.
 Exportable PDF readiness reports.
 Personalized development roadmaps.
 Vibe Coding Reflection
+
 What did AI do particularly well?
 AI significantly accelerated development by generating Streamlit code, interface improvements, and scoring logic quickly.
 
