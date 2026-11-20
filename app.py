@@ -219,3 +219,8 @@ for item, checked in items.items():
         st.success(
             "Congratulations! Your portfolio is in strong shape for agency submissions."
         )
+        st.divider()
+
+st.caption(
+    "ModelReady Lite | Built using Python, Streamlit, and AI-assisted development."
+)
