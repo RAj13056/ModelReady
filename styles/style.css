@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
-/* --------------------------------------------------
+/* ==========================================================
    GLOBAL
--------------------------------------------------- */
+   ========================================================== */
 
 html,
 body,
@@ -10,188 +10,280 @@ body,
     font-family: 'Montserrat', sans-serif;
 }
 
-/* --------------------------------------------------
+/* ==========================================================
    APP BACKGROUND
--------------------------------------------------- */
+   ========================================================== */
 
 .stApp {
-    background: linear-gradient(
-        135deg,
-        #0a0a0a 0%,
-        #121212 40%,
-        #1c1c1c 100%
-    );
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(212,175,55,0.08),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at top right,
+            rgba(212,175,55,0.05),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #050505 0%,
+            #0c0c0c 30%,
+            #111111 60%,
+            #151515 100%
+        );
 }
 
-/* --------------------------------------------------
-   LUXURY TITLE
--------------------------------------------------- */
+/* ==========================================================
+   LUXURY MAIN TITLE
+   ========================================================== */
 
 .title {
+
     text-align: center;
+
     color: #D4AF37;
+
     font-family: 'Cormorant Garamond', serif;
+
     font-size: 78px;
+
     font-weight: 700;
-    letter-spacing: 7px;
+
+    letter-spacing: 10px;
+
+    margin-top: 10px;
+
     margin-bottom: 5px;
+
     text-transform: uppercase;
+
+    text-shadow: 0px 0px 20px rgba(212,175,55,0.15);
 }
 
 .subtitle {
+
     text-align: center;
-    color: #dcdcdc;
-    font-size: 15px;
-    letter-spacing: 4px;
+
+    color: #d9d9d9;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 14px;
+
+    letter-spacing: 5px;
+
     text-transform: uppercase;
+
     margin-bottom: 40px;
 }
 
-/* --------------------------------------------------
+/* ==========================================================
+   HERO SECTION
+   ========================================================== */
+
+.hero-box {
+
+    background: rgba(255,255,255,0.025);
+
+    border: 1px solid rgba(212,175,55,0.25);
+
+    border-radius: 24px;
+
+    padding: 40px;
+
+    margin-top: 20px;
+
+    margin-bottom: 40px;
+
+    backdrop-filter: blur(16px);
+}
+
+.hero-title {
+
+    text-align:center;
+
+    color:#D4AF37;
+
+    font-family:'Playfair Display', serif;
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+    letter-spacing:2px;
+}
+
+.hero-subtitle {
+
+    text-align:center;
+
+    color:#ffffff;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    max-width:900px;
+
+    margin:auto;
+}
+
+/* ==========================================================
    HEADINGS
--------------------------------------------------- */
+   ========================================================== */
 
 h1,
 h2,
 h3 {
+
     color: #D4AF37 !important;
+
     font-family: 'Cormorant Garamond', serif !important;
+
     letter-spacing: 1px;
 }
 
-/* --------------------------------------------------
+/* ==========================================================
    TEXT
--------------------------------------------------- */
+   ========================================================== */
 
 p,
 label,
 div,
 span {
-    color: #f2f2f2;
+
+    color: #F2F2F2;
 }
 
-/* --------------------------------------------------
-   SECTION CARD
--------------------------------------------------- */
+/* ==========================================================
+   SIDEBAR
+   ========================================================== */
 
-.luxury-card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(212,175,55,0.30);
-    border-radius: 16px;
-    padding: 20px;
-    margin-bottom: 20px;
-    backdrop-filter: blur(10px);
+section[data-testid="stSidebar"] {
+
+    background: #0b0b0b;
 }
 
-/* --------------------------------------------------
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+
+    color: #D4AF37 !important;
+}
+
+/* ==========================================================
+   METRIC CARDS
+   ========================================================== */
+
+[data-testid="metric-container"] {
+
+    background: rgba(255,255,255,0.03);
+
+    border: 1px solid rgba(212,175,55,0.25);
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    box-shadow: 0px 0px 30px rgba(212,175,55,0.08);
+
+    transition: all 0.3s ease;
+}
+
+[data-testid="metric-container"]:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: 0px 0px 40px rgba(212,175,55,0.18);
+}
+
+/* ==========================================================
    BUTTONS
--------------------------------------------------- */
+   ========================================================== */
 
 .stButton > button {
+
     background: linear-gradient(
         90deg,
         #D4AF37,
-        #F8E08E
+        #F5D76E
     );
 
-    color: #111111 !important;
+    color: black !important;
 
     border: none !important;
 
-    border-radius: 12px;
-
-    padding: 12px;
+    border-radius: 14px;
 
     font-weight: 700;
 
-    font-size: 16px;
+    letter-spacing: 1px;
 
-    width: 100%;
+    height: 52px;
 
     transition: all 0.3s ease;
 }
 
 .stButton > button:hover {
-    transform: translateY(-2px);
 
-    box-shadow: 0px 8px 25px rgba(212,175,55,0.4);
+    transform: translateY(-3px);
 
-    background: linear-gradient(
-        90deg,
-        #F8E08E,
-        #D4AF37
-    );
+    box-shadow: 0px 10px 30px rgba(212,175,55,0.40);
 }
 
-/* --------------------------------------------------
-   METRICS
--------------------------------------------------- */
+/* ==========================================================
+   INPUTS
+   ========================================================== */
 
-[data-testid="metric-container"] {
+input,
+textarea {
 
-    background: rgba(255,255,255,0.04);
-
-    border: 1px solid rgba(212,175,55,0.25);
-
-    border-radius: 16px;
-
-    padding: 18px;
-
-    box-shadow: 0 0 15px rgba(212,175,55,0.15);
+    border-radius: 12px !important;
 }
-
-/* --------------------------------------------------
-   CHECKBOXES
--------------------------------------------------- */
-
-.stCheckbox {
-    padding: 4px;
-}
-
-/* --------------------------------------------------
-   PROGRESS BAR
--------------------------------------------------- */
-
-.stProgress > div > div > div > div {
-    background: linear-gradient(
-        90deg,
-        #D4AF37,
-        #F8E08E
-    );
-}
-
-/* --------------------------------------------------
-   SELECT BOXES
--------------------------------------------------- */
 
 div[data-baseweb="select"] {
 
-    background-color: rgba(255,255,255,0.03);
-
     border-radius: 12px;
+
+    background: rgba(255,255,255,0.03);
 }
 
-/* --------------------------------------------------
-   SUCCESS MESSAGES
--------------------------------------------------- */
+/* ==========================================================
+   PROGRESS BAR
+   ========================================================== */
+
+.stProgress > div > div > div > div {
+
+    background: linear-gradient(
+        90deg,
+        #D4AF37,
+        #F5D76E
+    );
+}
+
+/* ==========================================================
+   SUCCESS / INFO
+   ========================================================== */
 
 .stSuccess {
-    border-radius: 12px;
 
     border-left: 5px solid #D4AF37;
-}
 
-/* --------------------------------------------------
-   INFO BOXES
--------------------------------------------------- */
+    border-radius: 12px;
+}
 
 .stInfo {
+
     border-left: 5px solid #D4AF37;
+
+    border-radius: 12px;
 }
 
-/* --------------------------------------------------
+/* ==========================================================
    AGENCY CARDS
--------------------------------------------------- */
+   ========================================================== */
 
 .agency-card {
 
@@ -199,125 +291,147 @@ div[data-baseweb="select"] {
 
     border-left: 4px solid #D4AF37;
 
-    padding: 15px;
+    padding: 16px;
 
-    border-radius: 12px;
+    border-radius: 14px;
 
     margin-bottom: 12px;
 
-    transition: all 0.3s ease;
+    transition: all 0.25s ease;
 }
 
 .agency-card:hover {
 
-    background: rgba(212,175,55,0.08);
+    transform: translateX(6px);
 
-    transform: translateX(4px);
+    background: rgba(212,175,55,0.08);
 }
 
-/* --------------------------------------------------
-   ONE TO WATCH
--------------------------------------------------- */
+/* ==========================================================
+   ONE TO WATCH SECTION
+   ========================================================== */
 
 .watch-card {
 
-    text-align: center;
+    text-align:center;
+
+    padding:40px;
 
     background: linear-gradient(
         135deg,
-        rgba(212,175,55,0.10),
-        rgba(212,175,55,0.02)
+        rgba(212,175,55,0.12),
+        rgba(255,255,255,0.02)
     );
 
-    border: 1px solid rgba(212,175,55,0.3);
+    border:1px solid rgba(212,175,55,0.3);
 
-    border-radius: 16px;
+    border-radius:24px;
 
-    padding: 30px;
+    margin-top:30px;
 
-    margin-top: 20px;
-
-    margin-bottom: 20px;
+    margin-bottom:30px;
 }
 
 .watch-title {
 
-    color: #D4AF37;
+    color:#D4AF37;
 
-    font-family: 'Cormorant Garamond', serif;
+    font-family:'Cormorant Garamond', serif;
 
-    font-size: 34px;
+    font-size:42px;
 
-    letter-spacing: 2px;
+    letter-spacing:3px;
 }
 
-/* --------------------------------------------------
+/* ==========================================================
    QUOTE
--------------------------------------------------- */
+   ========================================================== */
 
 .quote {
 
-    text-align: center;
+    text-align:center;
 
-    color: #D4AF37;
+    color:#D4AF37;
 
-    font-family: 'Cormorant Garamond', serif;
+    font-family:'Playfair Display', serif;
 
-    font-style: italic;
+    font-size:34px;
 
-    font-size: 30px;
+    font-style:italic;
 
-    margin-top: 40px;
+    margin-top:40px;
 }
 
 .quote-author {
 
-    text-align: center;
+    text-align:center;
 
-    color: #bbbbbb;
+    color:#bbbbbb;
 
-    letter-spacing: 3px;
+    letter-spacing:5px;
 
-    text-transform: uppercase;
+    text-transform:uppercase;
 
-    font-size: 12px;
+    margin-top:10px;
+
+    font-size:12px;
 }
 
-/* --------------------------------------------------
+/* ==========================================================
    DIVIDERS
--------------------------------------------------- */
+   ========================================================== */
 
 hr {
-    border-color: rgba(212,175,55,0.25);
+
+    border-color: rgba(212,175,55,0.2);
 }
 
-/* --------------------------------------------------
-   SIDEBAR
--------------------------------------------------- */
-
-section[data-testid="stSidebar"] {
-    background-color: #0a0a0a;
-}
-
-section[data-testid="stSidebar"] h1,
-section[data-testid="stSidebar"] h2,
-section[data-testid="stSidebar"] h3 {
-    color: #D4AF37 !important;
-}
-
-/* --------------------------------------------------
+/* ==========================================================
    SCROLLBAR
--------------------------------------------------- */
+   ========================================================== */
 
 ::-webkit-scrollbar {
+
     width: 10px;
 }
 
 ::-webkit-scrollbar-track {
+
     background: #111111;
 }
 
 ::-webkit-scrollbar-thumb {
+
     background: #D4AF37;
+
     border-radius: 10px;
+}
+
+/* ==========================================================
+   LUXURY FADE ANIMATION
+   ========================================================== */
+
+.title,
+.subtitle,
+.hero-box,
+.watch-card {
+
+    animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(15px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0px);
+    }
 }

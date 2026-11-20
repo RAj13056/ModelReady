@@ -21,7 +21,21 @@ load_css()
 
 # --------------------------------------------------
 # TITLE
-# --------------------------------------------------
+st.markdown("""
+<div class="hero-box">
+
+<div class="hero-title">
+DISCOVER YOUR POTENTIAL
+</div>
+
+<div class="hero-subtitle">
+Evaluate your portfolio against international agency standards,
+identify opportunities for professional growth,
+and build a portfolio worthy of the world's leading agencies.
+</div>
+
+</div>
+""", unsafe_allow_html=True)# --------------------------------------------------
 st.markdown(
     '<div class="title">MODELREADY</div>',
     unsafe_allow_html=True
