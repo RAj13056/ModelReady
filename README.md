@@ -6,6 +6,52 @@ MODELREADY is a Streamlit-based web application that helps aspiring fashion mode
 
 Purpose
 As a fashion model, I wanted to create a tool that helps aspiring and developing models understand agency portfolio expectations and identify areas for improvement before submitting to professional agencies.
+Requirements
+- Python 3.10 or later (recommended)
+- Streamlit
+- An internet connection to load the Google Fonts and remote hero/agency photography; the One to Watch JPG is stored locally
+Quick start
+1. Extract the project ZIP or copy all included files into one directory, preserving the folder structure shown above.
+2. Open a terminal in the project directory.
+3. Optionally create and activate a virtual environment:
+   Windows PowerShell:
+   py -m venv .venv
+   .\.venv\Scripts\Activate.ps1
+   macOS / Linux:
+   python3 -m venv .venv
+   source .venv/bin/activate
+4. Install Streamlit:
+   pip install streamlit
+5. Start the app:
+   streamlit run app.py
+6. Open the local URL shown by Streamlit, http://localhost:8505.
+How to use it
+1. Pick a modeling category and experience level.
+2. Check the portfolio materials you already have.
+3. Review the live Portfolio Completion percentage.
+4. Select REVEAL MY PORTFOLIO ASSESSMENT.
+5. Read the readiness score, grade, strengths, gaps, recommendations, next steps, and submission checklist.
+6. Explore One to Watch, the global agency watchlist, and industry notes.
+Changing a selection clears a previous evaluation until you evaluate again.
+How the readiness score works
+The nine assets have these weights:
+Portfolio asset	Points
+Professional Headshot	15
+Full Body Shot	15
+Agency Digitals	15
+Profile Shot	10
+Editorial Portfolio	10
+Commercial Portfolio	10
+Comp Card	10
+Contact Information	10
+Measurements Included	5
+Total	100
+
+
+Experience adds 0 points (Beginner), 5 (Intermediate), or 10 (Professional), and the final score is capped at 100.
+- Readiness: below 50 = Not Ready; 50–79 = Almost Ready; 80+ = Ready.
+- Grade: 90+ = A+; 80–89 = A; 70–79 = B; 60–69 = C; below 60 = Needs Improvement.
+- Submission badge: 85+ = Agency Ready; 70–84 = Nearly Ready; below 70 = Portfolio In Progress.
 
 Features
 Portfolio Readiness Evaluation
@@ -29,10 +75,6 @@ Visual Studio Code
 AI Tools Used
 Microsoft Copilot
 ChatGPT
-Installation
-pip install -r requirements.txt
-Running the Application
-streamlit run app.py
 How AI Was Used
 AI was used throughout development to:
 
