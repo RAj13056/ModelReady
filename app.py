@@ -1,55 +1,34 @@
 import streamlit as st
 
+def load_css():
+    with open("styles/style.css") as f:
+        st.markdown(
+            f"<style>{f.read()}</style>",
+            unsafe_allow_html=True
+        )
+
+
 # --------------------------------------------------
 # PAGE CONFIGURATION
 # --------------------------------------------------
 st.set_page_config(
-    page_title="ModelReady Lite",
-    page_icon="📸",
-    layout="centered"
+    page_title="MODELREADY",
+    page_icon="✨",
+    layout="wide"
 )
 
-# --------------------------------------------------
-# CUSTOM STYLING
-# --------------------------------------------------
-st.markdown("""
-<style>
-.main {
-    padding-top: 1rem;
-}
-
-.title {
-    text-align: center;
-    color: #d63384;
-    font-size: 42px;
-    font-weight: bold;
-}
-
-.subtitle {
-    text-align: center;
-    color: gray;
-    font-size: 18px;
-    margin-bottom: 25px;
-}
-
-.result-box {
-    background-color: #1e1e1e;
-    padding: 15px;
-    border-radius: 10px;
-}
-</style>
-""", unsafe_allow_html=True)
+load_css()
 
 # --------------------------------------------------
 # TITLE
 # --------------------------------------------------
 st.markdown(
-    '<div class="title">📸 ModelReady Lite</div>',
+    '<div class="title">MODELREADY</div>',
     unsafe_allow_html=True
 )
 
 st.markdown(
-    '<div class="subtitle">Fashion Model Portfolio Readiness Checker</div>',
+    '<div class="subtitle">Luxury Portfolio Intelligence For Future Models</div>',
     unsafe_allow_html=True
 )
 
@@ -366,8 +345,73 @@ if st.button("Evaluate Portfolio"):
 # --------------------------------------------------
 # FOOTER
 # --------------------------------------------------
+# --------------------------------------------------
+# ONE TO WATCH
+# --------------------------------------------------
+
+st.divider()
+
+st.header("🌟 One To Watch")
+
+st.info("""
+The world's leading models constantly study agency boards to understand
+industry standards, portfolio quality, digitals, posing styles, and
+the type of talent currently being represented globally.
+""")
+
+st.subheader("Global Agency Watchlist")
+
+agencies = {
+    "Wilhelmina Models": "https://www.wilhelmina.com",
+    "IMG Models": "https://www.imgmodels.com",
+    "Next Management": "https://www.nextmanagement.com",
+    "Elite Model Management": "https://www.elitemodelmanagement.com",
+    "Ford Models": "https://www.fordmodels.com",
+    "Storm Management": "https://www.stormmanagement.com",
+    "The Society Management": "https://www.thesocietymanagement.com",
+    "Women Management": "https://www.womenmanagement.com",
+    "DNA Model Management": "https://www.dnamodels.com",
+    "Premier Model Management": "https://www.premiermodelmanagement.com",
+    "Select Model Management": "https://www.selectmodel.com",
+    "Viva Models": "https://www.viva-paris.com",
+    "Major Model Management": "https://www.majormodel.com",
+    "Freedom Models": "https://www.freedommodels.com",
+    "Nomad Management": "https://www.nomadmgmt.com"
+}
+
+for agency, url in agencies.items():
+    st.markdown(f"**{agency}**")
+    st.write(url)
+
+st.subheader("Industry Trends")
+
+st.success("""
+✓ Strong digitals
+
+✓ Editorial versatility
+
+✓ Commercial versatility
+
+✓ Natural skin presentation
+
+✓ Strong branding
+
+✓ Professional online presence
+
+✓ Confidence and consistency
+""")
+
+st.markdown("""
+<div class="quote">
+Fashion Changes. Style Endures.
+</div>
+
+<div class="quote-author">
+MODELREADY
+</div>
+""", unsafe_allow_html=True)
 st.divider()
 
 st.caption(
-    "ModelReady Lite | Built using Python, Streamlit, and AI-assisted development."
+    "MODELREADY | Luxury Portfolio Intelligence Platform | Built with Python, Streamlit and AI-Assisted Development"
 )

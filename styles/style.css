@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+
+/* --------------------------------------------------
+   GLOBAL
+-------------------------------------------------- */
+
+html,
+body,
+[class*="css"] {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* --------------------------------------------------
+   APP BACKGROUND
+-------------------------------------------------- */
+
+.stApp {
+    background: linear-gradient(
+        135deg,
+        #0a0a0a 0%,
+        #121212 40%,
+        #1c1c1c 100%
+    );
+}
+
+/* --------------------------------------------------
+   LUXURY TITLE
+-------------------------------------------------- */
+
+.title {
+    text-align: center;
+    color: #D4AF37;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 78px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    text-align: center;
+    color: #dcdcdc;
+    font-size: 15px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+/* --------------------------------------------------
+   HEADINGS
+-------------------------------------------------- */
+
+h1,
+h2,
+h3 {
+    color: #D4AF37 !important;
+    font-family: 'Cormorant Garamond', serif !important;
+    letter-spacing: 1px;
+}
+
+/* --------------------------------------------------
+   TEXT
+-------------------------------------------------- */
+
+p,
+label,
+div,
+span {
+    color: #f2f2f2;
+}
+
+/* --------------------------------------------------
+   SECTION CARD
+-------------------------------------------------- */
+
+.luxury-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(212,175,55,0.30);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+}
+
+/* --------------------------------------------------
+   BUTTONS
+-------------------------------------------------- */
+
+.stButton > button {
+    background: linear-gradient(
+        90deg,
+        #D4AF37,
+        #F8E08E
+    );
+
+    color: #111111 !important;
+
+    border: none !important;
+
+    border-radius: 12px;
+
+    padding: 12px;
+
+    font-weight: 700;
+
+    font-size: 16px;
+
+    width: 100%;
+
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0px 8px 25px rgba(212,175,55,0.4);
+
+    background: linear-gradient(
+        90deg,
+        #F8E08E,
+        #D4AF37
+    );
+}
+
+/* --------------------------------------------------
+   METRICS
+-------------------------------------------------- */
+
+[data-testid="metric-container"] {
+
+    background: rgba(255,255,255,0.04);
+
+    border: 1px solid rgba(212,175,55,0.25);
+
+    border-radius: 16px;
+
+    padding: 18px;
+
+    box-shadow: 0 0 15px rgba(212,175,55,0.15);
+}
+
+/* --------------------------------------------------
+   CHECKBOXES
+-------------------------------------------------- */
+
+.stCheckbox {
+    padding: 4px;
+}
+
+/* --------------------------------------------------
+   PROGRESS BAR
+-------------------------------------------------- */
+
+.stProgress > div > div > div > div {
+    background: linear-gradient(
+        90deg,
+        #D4AF37,
+        #F8E08E
+    );
+}
+
+/* --------------------------------------------------
+   SELECT BOXES
+-------------------------------------------------- */
+
+div[data-baseweb="select"] {
+
+    background-color: rgba(255,255,255,0.03);
+
+    border-radius: 12px;
+}
+
+/* --------------------------------------------------
+   SUCCESS MESSAGES
+-------------------------------------------------- */
+
+.stSuccess {
+    border-radius: 12px;
+
+    border-left: 5px solid #D4AF37;
+}
+
+/* --------------------------------------------------
+   INFO BOXES
+-------------------------------------------------- */
+
+.stInfo {
+    border-left: 5px solid #D4AF37;
+}
+
+/* --------------------------------------------------
+   AGENCY CARDS
+-------------------------------------------------- */
+
+.agency-card {
+
+    background: rgba(255,255,255,0.02);
+
+    border-left: 4px solid #D4AF37;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    margin-bottom: 12px;
+
+    transition: all 0.3s ease;
+}
+
+.agency-card:hover {
+
+    background: rgba(212,175,55,0.08);
+
+    transform: translateX(4px);
+}
+
+/* --------------------------------------------------
+   ONE TO WATCH
+-------------------------------------------------- */
+
+.watch-card {
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        rgba(212,175,55,0.10),
+        rgba(212,175,55,0.02)
+    );
+
+    border: 1px solid rgba(212,175,55,0.3);
+
+    border-radius: 16px;
+
+    padding: 30px;
+
+    margin-top: 20px;
+
+    margin-bottom: 20px;
+}
+
+.watch-title {
+
+    color: #D4AF37;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 34px;
+
+    letter-spacing: 2px;
+}
+
+/* --------------------------------------------------
+   QUOTE
+-------------------------------------------------- */
+
+.quote {
+
+    text-align: center;
+
+    color: #D4AF37;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-style: italic;
+
+    font-size: 30px;
+
+    margin-top: 40px;
+}
+
+.quote-author {
+
+    text-align: center;
+
+    color: #bbbbbb;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    font-size: 12px;
+}
+
+/* --------------------------------------------------
+   DIVIDERS
+-------------------------------------------------- */
+
+hr {
+    border-color: rgba(212,175,55,0.25);
+}
+
+/* --------------------------------------------------
+   SIDEBAR
+-------------------------------------------------- */
+
+section[data-testid="stSidebar"] {
+    background-color: #0a0a0a;
+}
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+    color: #D4AF37 !important;
+}
+
+/* --------------------------------------------------
+   SCROLLBAR
+-------------------------------------------------- */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #D4AF37;
+    border-radius: 10px;
+}
